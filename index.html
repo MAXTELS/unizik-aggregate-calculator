@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="shortcut icon" href="images/photo.jpg" type="image/x-icon">
+    <script>
+        function calcVals() {
+        var a = document.getElementById("olevela");
+        var b = document.getElementById("olevelb");
+        var c = document.getElementById("olevelc");
+        var d = document.getElementById("oleveld");
+        var e = document.getElementById("sitting");
+        var aa = a.options[a.selectedIndex].value;
+        var bb = b.options[b.selectedIndex].value;
+        var cc = c.options[c.selectedIndex].value;
+        var dd = d.options[d.selectedIndex].value;
+        var ee = e.options[e.selectedIndex].value;
+        var ff = parseFloat(document.getElementById('utme').value);
+        var totalCal = +aa + +bb + +cc + +dd + +ee + +ff*0.7;
+        document.getElementById("totalAmount").value = totalCal;
+    }
+    </script>
+</head>
+<body>
+    <div class="intro">
+        <h1 class="introh1">AGGREGATE CALCULATOR</h1>
+        <hr>
+        <P class="introp"> Using the 70:30 ratio, <br>
+        calculating your aggregate is a few clicks away.</P>
+        <hr>
+    </div>
+    <fieldset class="hts">
+        <legend> SELECT 4 GRADES FOR OLEVEL</legend>
+        <p class="aaa"> Click Below To Select Grade A1-F9.</p>
+        <label for="olevela"></label>
+        <div class="ht">
+            <label for="olevela">OLEVEL 1:</label>
+            <select class="pio" name="olevela" id="olevela">
+                <option value="0" hidden>select</option>
+                <option value="27">A1</option>
+                <option value="24">B2</option>
+                <option value="21">B3</option>
+                <option value="18">C4</option>
+                <option value="16.5">C5</option>
+                <option value="15">C6</option>
+                <option value="12">D7</option>
+                <option value="0">E8</option>
+                <option value="0">F9</option>
+            </select>
+        </div>
+<br>
+        <div class="ht">
+            <label for="olevelb">OLEVEL 2:</label>
+            <select class="pio" name="olevelb" id="olevelb">
+                <option value="0" hidden>select</option>
+                <option value="27">A1</option>
+                <option value="24">B2</option>
+                <option value="21">B3</option>
+                <option value="18">C4</option>
+                <option value="16.5">C5</option>
+                <option value="15">C6</option>
+                <option value="12">D7</option>
+                <option value="0">E8</option>
+                <option value="0">F9</option>
+            </select>
+        </div>
+<br>
+        <div class="ht">
+            <label for="olevelc">OLEVEL 3:</label>
+            <select class="pio" name="olevelc" id="olevelc">
+                <option value="0" hidden>select</option>
+                <option value="27">A1</option>
+                <option value="24">B2</option>
+                <option value="21">B3</option>
+                <option value="18">C4</option>
+                <option value="16.5">C5</option>
+                <option value="15">C6</option>
+                <option value="12">D7</option>
+                <option value="0">E8</option>
+                <option value="0">F9</option>
+            </select>
+        </div>
+<br>
+        <div class="ht">
+            <label for="oleveld">OLEVEL 4:</label>
+            <select class="pio" name="oleveld" id="oleveld">
+                <option value="0" hidden>select</option>
+                <option value="27">A1</option>
+                <option value="24">B2</option>
+                <option value="21">B3</option>
+                <option value="18">C4</option>
+                <option value="16.5">C5</option>
+                <option value="15">C6</option>
+                <option value="12">D7</option>
+                <option value="0">E8</option>
+                <option value="0">F9</option>
+            </select>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>NO. OF OLEVEL SITTING(S)</legend>
+        <p class="aaa">Please Select An Option Below</p>
+        <div class="ht">
+            <select class="pio" name="sitting" id="sitting">
+                <option value="3">One Sitting</option>
+                <option value="0">More Than Once</option>
+            </select>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>YOUR JAMB SCORE</legend>
+            <p class="aaa">Please Enter Correctly, Your Jamb Score</p>
+            <div class="ht"></div>
+        <label for="utme" class="abc">JAMB SCORE</label>
+        <input type="number" name="utme" id="utme" class="ttt" required placeholder="UTME score">
+        <button onclick="calcVals()">CALCULATE NOW</button>
+        </div>
+    </fieldset>
+<p class="aaa">YOUR AGGREGATE IS <input name="totalAmount" id="totalAmount" type="text" class="jjk" readonly>
+</p>
+</body>
+</html>

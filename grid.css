@@ -1,0 +1,112 @@
+html {
+    background-color: rgb(255, 255, 255);
+    background-image: url(images/manbg.jpg);
+    background-position:left;
+    background-repeat: no-repeat;
+}
+h1 {
+    margin-bottom: 0px;
+}
+.ht {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aggregate {
+    background-image: url(images/photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+label {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: larger;
+}
+legend{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: bold;
+    font-size: larger;
+    color:rgb(0, 23, 65);
+}
+.ttt {
+    font-style:normal;
+    font-family: arial;
+    background: rgb(240, 245, 255);
+    border: navy;
+    border-style:solid;
+    color: balck;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+}
+select {
+    font-style:normal;
+    font-family: arial;
+    background: rgb(240, 245, 255);
+    border: navy;
+    color: balck;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-bottom: 5px;
+}
+input:hover {
+    color:rgb(177, 50, 3);
+    background: white;
+}
+.intro {
+    text-align: center; 
+}
+.introp {
+    font-size: 22px;
+}
+.submit {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.abc {
+    font-size: 25px;
+    background: white;
+}
+.aaa {
+    margin: 0;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background:fixed;
+    justify-content: center;
+
+}
+.mmpp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pio {
+    width: 100px;
+    color:rgb(80, 22, 22);
+    height: 30px;
+    background-color: rgb(238, 252, 255);
+    font-size: 15px;
+}
+option {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.jjk {
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    border-style: solid;
+}
+hr {
+    margin: 0px;
+    padding:0px
+}
